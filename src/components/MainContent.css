@@ -8,4 +8,13 @@
   color: palevioletred;
   top: -11px;
   font-size: 10px;
+  z-index: 50;
+  width: fit-content;
+  background-color: rgba(200, 200, 200, 0.5);
 }
+/* .label::before:focus {
+  border-top: 4px solid greenyellow;
+}
+.label::after:focus {
+  border-top: 4px solid greenyellow;
+} */

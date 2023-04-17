@@ -5,6 +5,8 @@ import {
   IoNotificationsSharp,
   FaCouch,
   BsPersonFill,
+  ImCheckmark,
+  HiDotsVertical,
 } from "../utils/icons";
 import CompanyInfo from "./CompanyInfo";
 import "./MainContent.css";
@@ -22,7 +24,7 @@ export default function MainContent() {
           <div className="flex items-center justify-evenly w-[500px]">
             <label className="w-fit relative">
               <input
-                className="input border-[1px] w-[175px] h-[35px] py-[2px] px-[8px] rounded-md border-gray-400 bg-transparent focus:outline-none focus:border-pink-600 placeholder:opacity-0"
+                className="input border-[1px] w-[175px] h-[35px] py-[2px] px-[8px] rounded-md border-gray-400 bg-transparent focus:outline-none  focus:border-t-transparent placeholder:opacity-0"
                 placeholder="&nbsp;"
               />
               <span className="label absolute text-ellipsis overflow-hidden whitespace-nowrap text-sm top-2 left-2 w-[calc(100%-18px)] text-gray-500">
@@ -86,12 +88,27 @@ export default function MainContent() {
         </div>
         {/* Project section */}
         <div className="col-start-1 col-span-4 row-start-7 row-end-12 inline-block border-[2px] border-black">
-          Project info
+          <div className="h-[500px]">
+            <div className="pr-2 border-[1px] border-red-400 h-[85px]">
+              <h5 className="px-3 pt-4 font-semibold border-[1px] border-blue-400">
+                Projects
+              </h5>
+              <div className="flex justify-between px-3 pt-2 border-[1px] border-green-400">
+                <div className="flex items-center border-[1px] border-orange-600">
+                  <ImCheckmark style={{ color: "blue" }} />{" "}
+                  <p className="text-xs">
+                    <span className="font-bold pl-1">30 done</span> this month
+                  </p>{" "}
+                </div>
+                <div className="border-[1px] border-yellow-400">
+                  <HiDotsVertical />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        {/* grpah and orders section */}
-        <div className="col-start-5 col-span-2 row-start-4 row-end-12 border-[1px] border-red-500 bg-green-200">
-          Graph and Order section
-        </div>
+        {/* graph and orders section */}
+        <div className="col-start-5 col-span-2 row-start-4 row-end-12 border-[1px] border-red-500 bg-green-200"></div>
         {/* footer section */}
         <div className="col-start-1 col-span-6 row-start-12 row-end-13 border-[2px] border-black">
           Footer section
