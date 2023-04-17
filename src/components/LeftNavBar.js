@@ -1,34 +1,38 @@
 import { BsFillPersonFill, TbTextDirectionRtl, TbLayoutDashboard,
   IoNotificationsSharp, MdBackupTable, GiBulletBill, SiVirtualbox, RxDashboard, ImEnter, AiOutlineForm,
 } from '../utils/icons';
+import "./LeftNavBar.css"
 
 export default function LeftNavBar() {
- let navItemCSS = 'flex items-center py-3 hover:bg-neutral-900 rounded-lg active:bg-pink-600'
-
+ let navItemCSS = 'flex items-center py-3 hover:bg-neutral-900 rounded-lg active:bg-pink-600 mx-4'
+ let iconCSS = "p-1 text-3xl"
+ 
   return (
-    <div className="w-screen grid grid-cols-2 border-[2px] border-white ">
-      <div className="w-[180px] h-[calc(100%-4px)] fixed top-[2px] left-5 border-[2px] border-black bg-gradient-to-b from-neutral-800 to-neutral-950 rounded-lg">
-        <div className="mx-4 text-white text-sm">
-          <div className='flex items-center py-3 border-b-2 mb-2'><TbLayoutDashboard className="p-1" />Material Dashboard </div>
-          <div className="block h-[calc(50vh)] overflow-auto overscroll-y-auto">
+    <div className="w-screen grid grid-cols-2 border-[2px] border-white">
+      <div className="w-[250px] h-[calc(100%-40px)] fixed top-[2px] left-5 border-[2px] border-black bg-gradient-to-b from-neutral-800 to-neutral-950 rounded-lg align-tems">
+        <div className=' text-white border-yellow-400 border-b py-10 flex justify-center items-center mb-2'>
+           <div className='flex items-center mb-2 mx-4 absolute border-4 border-green-400 z-40'><TbLayoutDashboard className={iconCSS} />Material Dashboard 2</div>
+        </div>
+        <div className=" text-white text-sm">
+          <div class="contentNav">
             <ul>
-              <li className={navItemCSS}> <RxDashboard className="p-1"/> Dashboard</li>
-              <li className={navItemCSS}> <MdBackupTable className="p-1"/> Tables</li>
-              <li className={navItemCSS}> <GiBulletBill className="p-1"/>Billing </li>
-              <li className={navItemCSS}> <SiVirtualbox className="p-1"/>Virtual Reality</li>
-              <li className={navItemCSS}> <TbTextDirectionRtl className="p-1"/>RTL</li>
-              <li className={navItemCSS}> <IoNotificationsSharp className="p-1"/> Notifications</li>
+              <li className={navItemCSS}> <RxDashboard className={iconCSS}/> Dashboard</li>
+              <li className={navItemCSS}> <MdBackupTable className={iconCSS}/> Tables</li>
+              <li className={navItemCSS}> <GiBulletBill className={iconCSS}/>Billing </li>
+              <li className={navItemCSS}> <SiVirtualbox className={iconCSS}/>Virtual Reality</li>
+              <li className={navItemCSS}> <TbTextDirectionRtl className={iconCSS}/>RTL</li>
+              <li className={navItemCSS}> <IoNotificationsSharp className={iconCSS}/> Notifications</li>
             </ul>
-            <h5 className="py-3">Account Pages</h5>
+            <h5 className="py-3 mx-4">Account Pages</h5>
             <ul>
-              <li className={navItemCSS}> <BsFillPersonFill className="p-1"/>Profile</li>
-              <li className={navItemCSS}> <ImEnter className="p-1"/>Sign In</li>
-              <li className={navItemCSS}> <AiOutlineForm className="p-1"/>Sign Up</li>
+              <li className={navItemCSS}> <BsFillPersonFill className={iconCSS}/>Profile</li>
+              <li className={navItemCSS}> <ImEnter className={iconCSS}/>Sign In</li>
+              <li className={navItemCSS}> <AiOutlineForm className={iconCSS}/>Sign Up</li>
             </ul>
           </div>
-        </div>
-        <div className='block absolute bottom-[2px]'>
-          <button className="m-4 text-white bg-pink-600 rounded-lg text-center py-2 px-6 text-sm">Update To Pro</button>
+          <div className='absolute bottom-[-2px] left-[-2.5px] pt-[10px] rounded-lg bg-neutral-950 z-30'>
+            <button className="mx-4 mb-4 w-[calc(250px-32px)] text-white bg-pink-600 rounded-lg text-center py-2 px-6 text-xs font-bold">UPGRADE TO PRO</button>
+          </div>
         </div>
       </div>
     </div>
