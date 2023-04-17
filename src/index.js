@@ -9,6 +9,7 @@ import {
 
 import LeftNavBar from "./components/LeftNavBar";
 import MainContent from "./components/MainContent";
+import Footer from './components/Footer';
 import App from './App';
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/left-nav-bar",
     element: <LeftNavBar />,
+  },
+  {
+    path: "/footer",
+    element: <Footer />,
   },
   {
     path: "/main-content",
