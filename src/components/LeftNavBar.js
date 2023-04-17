@@ -11,7 +11,7 @@ export default function LeftNavBar() {
     <div className="w-screen grid grid-cols-2 border-[2px] border-white">
       <div className="w-[250px] h-[calc(100%-40px)] fixed top-[2px] left-5 border-[2px] border-black bg-gradient-to-b from-neutral-800 to-neutral-950 rounded-lg align-tems">
         <div className=' text-white border-yellow-400 border-b py-10 flex justify-center items-center mb-2'>
-           <div className='flex items-center mb-2 mx-4 absolute border-4 border-green-400 z-40'><TbLayoutDashboard className={iconCSS} />Material Dashboard 2</div>
+           <div className='flex items-center mb-2 mx-4 absolute z-40'><TbLayoutDashboard className={iconCSS} />Material Dashboard 2</div>
         </div>
         <div className=" text-white text-sm">
           <div class="contentNav">
