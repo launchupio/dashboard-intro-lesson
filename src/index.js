@@ -9,6 +9,7 @@ import {
 
 import LeftNavBar from "./components/LeftNavBar";
 import MainContent from "./components/MainContent";
+import GraphandOrders from './components/GraphandOrders';
 import App from './App';
 
 const router = createBrowserRouter([
@@ -23,7 +24,11 @@ const router = createBrowserRouter([
   {
     path: "/main-content",
     element: <MainContent />
-  }
+  },
+  {
+    path: "/graph-and-orders",
+    element: <GraphandOrders />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
