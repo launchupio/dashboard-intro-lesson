@@ -4,7 +4,7 @@ import MainContent from './components/MainContent';
 
 function App() {
   return (
-    <div className="w-screen h-screen grid grid-cols-2 border-[2px] border-white overflow-y-auto">
+    <div className="w-screen h-screen grid grid-cols-2 border-[2px] border-white overflow-y-auto bg-gray-500">
       <LeftNavBar />
       <MainContent />
       <GraphandOrders/>
