@@ -18,7 +18,7 @@ export default function GraphandOrders() {
                     <p className="flex flex-wrap items-center"><AiOutlineArrowUp className="text-green-600"/> <span className="font-bold">24%</span> this month</p>
                 </div>
                 <div>
-                    <dl>
+                    <dl className="border-4 border-black">
                         <dt className={headerCSS}><AiFillBell className="text-green-600"/>$2400, Design Changes</dt>
                             <dl className={timestampCSS}>22 Dec 7:20PM</dl>
                         <dt className={headerCSS}><BsCode className="text-red-500"/>New order #1832412</dt>
