@@ -1,7 +1,6 @@
 import { BsFillPersonFill, TbTextDirectionRtl, TbLayoutDashboard,
   IoNotificationsSharp, MdBackupTable, GiBulletBill, SiVirtualbox, RxDashboard, ImEnter, AiOutlineForm,
 } from '../utils/icons';
-import "./LeftNavBar.css"
 
 export default function LeftNavBar() {
  let navItemCSS = 'flex items-center py-3 hover:bg-neutral-900 rounded-lg active:bg-pink-600 mx-4'
@@ -14,7 +13,7 @@ export default function LeftNavBar() {
            <div className='flex items-center mb-2 mx-4 absolute z-40'><TbLayoutDashboard className={iconCSS} />Material Dashboard 2</div>
         </div>
         <div className=" text-white text-sm">
-          <div class="contentNav">
+          <div className="h-[calc(50vh)] overflow-auto overflowBehaviorY scrollbarGutter block">
             <ul>
               <li className={navItemCSS}> <RxDashboard className={iconCSS}/> Dashboard</li>
               <li className={navItemCSS}> <MdBackupTable className={iconCSS}/> Tables</li>

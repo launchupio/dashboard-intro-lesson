@@ -1,7 +1,0 @@
-.contentNav{
-    display:block;
-    height:calc(50vh);
-    overflow: auto;
-    overscroll-behavior-y: auto;
-    scrollbar-gutter: stable;
-}

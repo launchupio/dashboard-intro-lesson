@@ -18,9 +18,16 @@ module.exports = {
         '11': '11',
         '12': '12',
         '13': '13',
-      }
+      },
+      scrollbarGutter: {
+        'stable':'stable',
+      },
+      overflowBehaviorY:{
+        'auto':'auto',
+      },
     },
   },
+  variants: {},
   plugins: [],
 }
 
