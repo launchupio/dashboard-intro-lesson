@@ -27,10 +27,10 @@ export default function MainContent() {
         </div>
         {/* Company info section */}
         <div className="col-start-1 col-span-6 row-start-2 row-end-4 grid grid-cols-4 border-[2px] border-black">
-          <CompanyInfo icon={<FaCouch style={{backgroundColor: 'white'}} />} iconbg="bg-slate-700" text={`Today's Money`} number="$53k" stat="+55%" stattext="than last week" />
+          <CompanyInfo icon={<FaCouch className='text-white'/>} iconbg="bg-slate-700" text={`Today's Money`} number="$53k" stat="+55%" stattext="than last week" />
           <CompanyInfo icon={<BsPersonFill />} iconbg="bg-pink-400" text={`Today's Users`} number="2,300" stat="+3%" stattext="than last month" />
           <CompanyInfo icon={<BsPersonFill />} iconbg="bg-green-400" text="New Clients" number="3,462" stat="-2%" stattext="than yesterday" />
-          <CompanyInfo icon={<FaCouch />} iconbg="bg-blue-400" text="Sales" number="$103,430" stat="+5%" stattext="than yesterday" />
+          <CompanyInfo icon={<FaCouch className='text-white' />} iconbg="bg-blue-400" text="Sales" number="$103,430" stat="+5%" stattext="than yesterday" />
         </div>
         {/* graphs section */}
         <div className="col-start-1 col-span-4 row-start-4 row-end-7 border-[2px] border-black">Graphs</div>
