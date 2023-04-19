@@ -13,7 +13,7 @@ export default function LeftNavBar() {
            <div className='flex items-center mb-2 mx-4 absolute z-40'><TbLayoutDashboard className={iconCSS} />Material Dashboard 2</div>
         </div>
         <div className=" text-white text-sm">
-          <div className="h-[calc(50vh)] overflow-auto overflowBehaviorY scrollbarGutter block">
+          <div className="h-[calc(50vh)] block overflow-auto overflowBehaviorY scrollbarGutter">
             <ul>
               <li className={navItemCSS}> <RxDashboard className={iconCSS}/> Dashboard</li>
               <li className={navItemCSS}> <MdBackupTable className={iconCSS}/> Tables</li>
