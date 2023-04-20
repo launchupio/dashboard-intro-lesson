@@ -1,5 +1,5 @@
-import LeftNavBar from './components/LeftNavBar';
-import MainContent from './components/MainContent';
+import LeftNavBar from "./components/LeftNavBar";
+import MainContent from "./components/MainContent";
 
 function App() {
   return (

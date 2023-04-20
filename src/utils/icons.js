@@ -10,3 +10,5 @@ export * from "react-icons/rx";
 export * from "react-icons/im";
 export * from "react-icons/ai";
 export * from "react-icons/fa";
+export * from "react-icons/hi";
+export * from "react-icons/im";

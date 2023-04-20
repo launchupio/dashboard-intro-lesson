@@ -1,0 +1,15 @@
+.input:not(:placeholder-shown) + .label {
+  color: palevioletred;
+  top: -11px;
+  font-size: 10px;
+}
+
+.input:focus + .label {
+  color: palevioletred;
+  top: -11px;
+  font-size: 10px;
+  z-index: 50;
+  width: fit-content;
+  border-top: 1px;
+  border-top-color: palevioletred;
+}
