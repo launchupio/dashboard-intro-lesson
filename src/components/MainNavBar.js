@@ -17,7 +17,7 @@ const MainNavBar = () => {
       <div className="flex items-center justify-evenly w-[500px]">
         <label className="w-fit relative">
           <input
-            className="input border-[1px] w-[175px] h-[35px] py-[2px] px-[8px] rounded-md border-gray-400 bg-transparent focus:outline-none  focus:border-pink-600 focus:border-t-transparent placeholder:opacity-0"
+            className="input border-[1px] w-[175px] h-[35px] py-[2px] px-[8px] rounded-md border-gray-400 bg-transparent focus:outline-none focus:border-pink-600 focus:border-t-transparent placeholder:opacity-0"
             placeholder="&nbsp;"
           />
           <span className="label absolute text-ellipsis overflow-hidden whitespace-nowrap text-sm top-2 left-2 w-[calc(100%-18px)] text-gray-500">
