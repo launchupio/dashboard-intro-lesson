@@ -12,25 +12,44 @@ export default function GraphandOrders() {
                 <p>Last Campaign Performance</p>
                 <p className="flex flex-wrap items-center"><AiOutlineClockCircle className="text-gray-500"/> just updated</p>
             </div>
-            <div className="border-4 border-red-400 rounded-lg bg-green-200">
-                <div>
+            <div className="border-4 border-red-400 rounded-lg bg-green-200 p-6">
+                <div className="mb-4">
                     <h1 className="font-bold">Orders Overview</h1>
                     <p className="flex flex-wrap items-center"><AiOutlineArrowUp className="text-green-600"/> <span className="font-bold">24%</span> this month</p>
                 </div>
-                <div>
-                    <dl className="border-4 border-black">
-                        <dt className={headerCSS}><AiFillBell className="text-green-600"/>$2400, Design Changes</dt>
-                            <dl className={timestampCSS}>22 Dec 7:20PM</dl>
+                <div className="relative">
+                    <dl className="before:empty-content before:border-4 before:border-purple-500 before:absolute">
+                        <div className="flex mb-4">
+                            <div className="pt-1 absolute z-10">
+                                <AiFillBell className="text-green-600"/>
+                            </div>
+                            <div className="border-4 border-red-400 pl-4 ml-[6px] z-0">
+                                <dt className={headerCSS}>$2400, Design Changes</dt>
+                                <dl className={timestampCSS}>22 Dec 7:20PM</dl>
+                            </div>
+
+                        </div>
+                        <div className="flex mb-4">
+                            <div className="pt-1 absolute z-10">
+                                <AiFillBell className="text-green-600"/>
+                            </div>
+                            <div className="border-4 border-red-400 pl-4  ml-[6px] z-0">
+                                <dt className={headerCSS}>$2400, Design Changes</dt>
+                                <dl className={timestampCSS}>22 Dec 7:20PM</dl>
+                            </div>
+
+                        </div>
+
                         <dt className={headerCSS}><BsCode className="text-red-500"/>New order #1832412</dt>
                             <dl className={timestampCSS}>21 DEC 11:00 PM</dl>
-                        <dt className={headerCSS}><HiShoppingCart className="text-blue-500"/>Server payments for April</dt>
+                        {/* <dt className={headerCSS}><HiShoppingCart className="text-blue-500"/>Server payments for April</dt>
                             <dl className={timestampCSS}>21 DEC 9:34 PM</dl>
                         <dt className={headerCSS}> <TfiCreditCard className="text-orange-500"/> New card added for order #4395133</dt>
                             <dl className={timestampCSS}>20 DEC 2:20 AM</dl>
                         <dt className={headerCSS}> <MdKey className="text-rose-500"/>Unlock packages for development</dt>
                             <dl className={timestampCSS}>18 DEC 4:54 AM</dl>
                         <dt className={headerCSS}><GiTakeMyMoney className="text-gray-500"/> New order #9583120</dt>
-                            <dl className={timestampCSS}>17 DEC </dl>
+                            <dl className={timestampCSS}>17 DEC </dl> */}
                     </dl>
                 </div>
             </div>
