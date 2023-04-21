@@ -1,13 +1,10 @@
 import {
-  BsFillPersonFill,
-  FiMenu,
-  FcSettings,
-  IoNotificationsSharp,
   FaCouch,
   BsPersonFill,
   HiOutlineDotsVertical,
   ImCheckmark,
 } from "../utils/icons";
+import MainNavBar from "./MainNavBar";
 import CompanyInfo from "./CompanyInfo";
 import Table from "./Table";
 import smiley from "../images/smiley.jpeg";
@@ -19,6 +16,60 @@ import bluelogo from "../images/blue.png";
 import redsquare from "../images/redsquare.png";
 
 export default function MainContent() {
+  const companyInfoList = [
+    {
+      icon: <FaCouch />,
+      iconbg: "bg-slate-700",
+      text: "Today's Money",
+      number: "$53k",
+      stat: "+55%",
+      statcolor: "text-green-500",
+      stattext: "than last week",
+    },
+    {
+      icon: <BsPersonFill />,
+      iconbg: "bg-pink-400",
+      text: "Today's Users",
+      number: "2,300",
+      stat: "+3%",
+      statcolor: "text-green-500",
+      stattext: "than last month",
+    },
+    {
+      icon: <BsPersonFill />,
+      iconbg: "bg-green-400",
+      text: "New Clients",
+      number: "3,462",
+      stat: "-2%",
+      statcolor: "text-red-500",
+      stattext: "than yesterday",
+    },
+    {
+      icon: <FaCouch />,
+      iconbg: "bg-blue-400",
+      text: "Sales",
+      number: "$103,430",
+      stat: "+5%",
+      statcolor: "text-green-500",
+      stattext: "than yesterday",
+    },
+  ];
+
+  const displayCompanyInfo = companyInfoList.map((company, idx) => {
+    return (
+      <CompanyInfo
+        key={idx}
+        icon={company.icon}
+        iconbg={company.iconbg}
+        text={company.text}
+        number={company.number}
+        stat={company.stat}
+        statcolor={company.statcolor}
+        stattext={company.stattext}
+      />
+    );
+  });
+
   const tableData = [
     {
       logo: xdlogo,
@@ -162,64 +213,15 @@ export default function MainContent() {
 
   return (
     <div className="w-screen h-screen grid grid-cols-2 bg-gray-100 overflow-y-auto">
-      <div className="w-[calc(100vw-238px)] h-full ml-[218px] grid grid-cols-6 grid-rows-12 gap-4">
-        {/* Nav section */}
-        <div className="col-start-1 col-end-7 row-start-1 row-end-2 flex justify-between border-[2px] border-blue-300 text-sm">
-          <div className="flex flex-col">
-            <div>Pages / Dashboard</div>
-            <div className="font-semibold">Dashboard</div>
-          </div>
-          <div className="flex items-center justify-evenly w-[430px]">
-            <input className="border-[1px] py-[2px] px-[2px] rounded-md border-gray-300" />
-            <button className="border-[1px] rounded-md border-pink-400 text-xs py-[5px] px-[5px] w-[100px] text-pink-400">
-              Online Builder
-            </button>
-            <div className="flex items-center justify-evenly w-[160px]">
-              <BsFillPersonFill />
-              <div>Sign In</div>
-              <FiMenu />
-              <FcSettings />
-              <IoNotificationsSharp />
-            </div>
-          </div>
-        </div>
+      <div className="w-[calc(100vw-238px)] h-full ml-[218px] grid grid-cols-6 auto-rows-min gap-5">
+        <MainNavBar />
+
         {/* Company info section */}
-        <div className="col-start-1 col-span-6 row-start-2 row-end-4 grid grid-cols-4 border-[2px] border-black">
-          <CompanyInfo
-            icon={<FaCouch style={{ backgroundColor: "white" }} />}
-            iconbg="bg-slate-700"
-            text={`Today's Money`}
-            number="$53k"
-            stat="+55%"
-            stattext="than last week"
-          />
-          <CompanyInfo
-            icon={<BsPersonFill />}
-            iconbg="bg-pink-400"
-            text={`Today's Users`}
-            number="2,300"
-            stat="+3%"
-            stattext="than last month"
-          />
-          <CompanyInfo
-            icon={<BsPersonFill />}
-            iconbg="bg-green-400"
-            text="New Clients"
-            number="3,462"
-            stat="-2%"
-            stattext="than yesterday"
-          />
-          <CompanyInfo
-            icon={<FaCouch />}
-            iconbg="bg-blue-400"
-            text="Sales"
-            number="$103,430"
-            stat="+5%"
-            stattext="than yesterday"
-          />
+        <div className="col-start-1 col-span-6 row-start-2 row-end-4 grid grid-cols-4 gap-4">
+          {displayCompanyInfo}
         </div>
         {/* graphs section */}
-        <div className="col-start-1 col-span-4 row-start-4 row-end-7 border-[2px] border-black">
+        <div className="col-start-1 col-span-4 row-start-4 row-end-7">
           Graphs
         </div>
         {/* Project section */}
@@ -249,9 +251,7 @@ export default function MainContent() {
           Graph and Order section
         </div>
         {/* footer section */}
-        <div className="col-start-1 col-span-6 row-start-12 row-end-13">
-          Footer section
-        </div>
+        <div className="col-start-1 col-span-6 row-start-12 row-end-13"></div>
       </div>
     </div>
   );
