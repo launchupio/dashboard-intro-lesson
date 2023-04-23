@@ -1,11 +1,12 @@
 import { 
-  BsFillPersonFill, FiMenu, FcSettings, IoNotificationsSharp, FaCouch, BsPersonFill
+  BsFillPersonFill, FiMenu, FcSettings, IoNotificationsSharp, FaCouch, BsPersonFill, BsClock
 } from '../utils/icons';
 import CompanyInfo from './CompanyInfo';
+import GraphCard from './GraphCard';
 
 export default function MainContent() {
   return (
-    <div className="w-screen h-screen grid grid-cols-2 border-[2px] border-white overflow-y-auto">
+    <div className="w-screen h-screen grid grid-cols-2 border-[2px] border-white overflow-y-auto bg-[#f0f2f5]">
       <div className="w-[calc(100vw-238px)] h-full ml-[218px] grid grid-cols-6 grid-rows-12 border-[2px] border-black">
         {/* Nav section */}
         <div className="col-start-1 col-end-7 row-start-1 row-end-2 flex justify-between border-[2px] border-blue-300 text-sm">
@@ -26,14 +27,34 @@ export default function MainContent() {
           </div>
         </div>
         {/* Company info section */}
-        <div className="col-start-1 col-span-6 row-start-2 row-end-4 grid grid-cols-4 border-[2px] border-black">
+        <div className="col-start-1 col-span-6 row-start-2 row-end-4 grid grid-cols-4">
           <CompanyInfo icon={<FaCouch style={{backgroundColor: 'white'}} />} iconbg="bg-slate-700" text={`Today's Money`} number="$53k" stat="+55%" stattext="than last week" />
           <CompanyInfo icon={<BsPersonFill />} iconbg="bg-pink-400" text={`Today's Users`} number="2,300" stat="+3%" stattext="than last month" />
           <CompanyInfo icon={<BsPersonFill />} iconbg="bg-green-400" text="New Clients" number="3,462" stat="-2%" stattext="than yesterday" />
           <CompanyInfo icon={<FaCouch />} iconbg="bg-blue-400" text="Sales" number="$103,430" stat="+5%" stattext="than yesterday" />
         </div>
         {/* graphs section */}
-        <div className="col-start-1 col-span-4 row-start-4 row-end-7 border-[2px] border-black">Graphs</div>
+        <div className="col-start-1 col-span-4 row-start-4 row-end-7 flex gap-4 mt-4 px-[12px] justify-between">
+          <GraphCard
+            source={'http://placekitten.com/400/400'}
+            alternate={'kitten place holder'}
+            boldText={'Website Views'}
+            detailText={'Last Campaign Performace'}
+            updateText={'capaign sent 2 days ago'}
+          />
+          <GraphCard
+            source={'http://placekitten.com/400/400'}
+            alternate={'kitten place holder'}
+            boldText={'Daily Sales'}
+            detailText={
+              <div>
+                <span className='font-semibold'>(+15%)</span>
+                <span> increase in today sales.</span>
+              </div>}
+            updateText={'updated 4 min ago'}
+          />
+          
+        </div>
         {/* Project section */}
         <div className="col-start-1 col-span-4 row-start-7 row-end-12 inline-block border-[2px] border-black">Project info</div>
         {/* grpah and orders section */}
