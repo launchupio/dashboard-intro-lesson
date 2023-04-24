@@ -216,15 +216,14 @@ export default function MainContent() {
       <div className="w-[calc(100vw-238px)] h-full ml-[218px] grid grid-cols-6 auto-rows-min gap-5">
         <MainNavBar />
 
-        {/* Company info section */}
         <div className="col-start-1 col-span-6 row-start-2 row-end-4 grid grid-cols-4 gap-4">
           {displayCompanyInfo}
         </div>
-        {/* graphs section */}
+
         <div className="col-start-1 col-span-4 row-start-4 row-end-7">
           Graphs
         </div>
-        {/* Project section */}
+
         <div className="col-start-1 col-span-4 row-start-7 row-end-12 inline-block w-full h-fit rounded-lg bg-white">
           <div className="h-[550px] px-1">
             <div className="h-[85px] mb-3">
@@ -246,11 +245,9 @@ export default function MainContent() {
             </div>
           </div>
         </div>
-        {/* graph and orders section */}
-        <div className="col-start-5 col-span-2 row-start-4 row-end-12 border-[1px] border-red-500 bg-green-200">
-          Graph and Order section
-        </div>
-        {/* footer section */}
+
+        <div className="col-start-5 col-span-2 row-start-4 row-end-12 border-[1px] border-red-500 bg-green-200"></div>
+
         <div className="col-start-1 col-span-6 row-start-12 row-end-13"></div>
       </div>
     </div>
