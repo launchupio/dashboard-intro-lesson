@@ -6,7 +6,7 @@ function PercentageBar({ completion }) {
   return (
     <div className="w-[150px] h-[30px] flex flex-wrap items-center">
       <p className="w-[80%] h-4 text-xs font-bold text-gray-500">
-        {`${completion}%`}
+        {completion}%
       </p>
       <div className="w-[140px] h-fit rounded-full bg-gray-200">
         <div
