@@ -1,7 +1,7 @@
 // completion is just a number value as completion="25"
 function PercentageBar({ completion }) {
   let barColor = completion === 100 ? "bg-green-500" : "bg-blue-500";
-  let barwidth = (completion / 100) * 140;
+  let barWidth = (completion / 100) * 140;
 
   return (
     <div className="w-[150px] h-[30px] flex flex-wrap items-center">
@@ -12,7 +12,7 @@ function PercentageBar({ completion }) {
         <div
           className={`h-[5px] rounded-full ${barColor}`}
           style={{
-            width: `${barwidth}px`,
+            width: `${barWidth}px`,
           }}
         ></div>
       </div>

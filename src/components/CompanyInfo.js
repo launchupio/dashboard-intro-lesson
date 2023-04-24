@@ -1,17 +1,17 @@
 function CompanyInfo({
   icon,
-  iconbg,
+  iconBg,
   text,
   number,
   stat,
-  statcolor,
-  stattext,
+  statColor,
+  statText,
 }) {
   return (
     <div className="h-[150px] px-1 rounded-lg bg-white font-sans">
       <div className="relative px-1 pt-2 h-[60%] border-b-[0.5px] border-gray-500">
         <div
-          className={`${iconbg} absolute -top-2 w-[3rem] h-[3.1rem] flex justify-center items-center text-[1.2rem] rounded-lg drop-shadow-lg`}
+          className={`${iconBg} absolute -top-2 w-[3rem] h-[3.1rem] flex justify-center items-center text-[1.2rem] rounded-lg drop-shadow-lg`}
         >
           <span className="text-white text-xl">{icon}</span>
         </div>
@@ -21,8 +21,8 @@ function CompanyInfo({
         </div>
       </div>
       <div className="px-1 h-[40%] flex items-center text-sm">
-        <p className={`pr-1 ${statcolor}`}>{stat}</p>
-        <p className="text-gray-500">{stattext}</p>
+        <p className={`pr-1 ${statColor}`}>{stat}</p>
+        <p className="text-gray-500">{statText}</p>
       </div>
     </div>
   );

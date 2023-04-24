@@ -1,11 +1,11 @@
-import PercentageBar from "./Percentagebar";
+import PercentageBar from "./PercentageBar";
 import TableHeader from "./TableHeader";
 import Member from "./Member";
 
 function Table({ tableData }) {
   const displayTable = tableData.map((item, idx) => {
     return (
-      <tr key={idx} className="border-y-[1px]">
+      <tr key={idx} className="border-y">
         <div className="flex items-center h-full pl-4">
           <td className="flex justify-between w-fit">
             <img src={item.logo} width="25" height="25" alt="company logo" />
@@ -21,13 +21,13 @@ function Table({ tableData }) {
                 <>
                   <Member
                     key={index}
-                    litemstyles={`absolute ${person.left}`}
-                    divstyles={`rounded-full bg-white p-[3px] -top-3 relative cursor-pointer`}
-                    imgsrc={person.profile}
-                    imgwidth="20"
-                    imgheight="20"
-                    alttext="member profile"
-                    namedivstyles={`absolute top-[30px] -left-[30px] text-sm bg-black w-max py-1 px-2 h-fit text-center text-white`}
+                    listItemStyles={`absolute ${person.left}`}
+                    divStyles={`rounded-full bg-white p-[3px] -top-3 relative cursor-pointer`}
+                    imgSrc={person.profile}
+                    imgWidth="20"
+                    imgHeight="20"
+                    altText="member profile"
+                    nameDivStyles={`absolute top-[30px] -left-[30px] text-sm bg-black w-max py-1 px-2 h-fit text-center text-white`}
                     name={person.name}
                     personOrder={person.stackOrder}
                     arrLength={arrLength}
@@ -53,11 +53,11 @@ function Table({ tableData }) {
     <table className="auto w-full h-full ms-auto me-auto">
       <thead>
         <tr>
-          <TableHeader textalign="text-left" text="Companies" padding="pl-3" />
-          <TableHeader textalign="text-left" text="Members" padding="pl-1" />
-          <TableHeader textalign="text-center" text="Budget" padding="pl-1" />
+          <TableHeader text="Companies" padding="3" />
+          <TableHeader text="Members" />
+          <TableHeader textAlign="center" text="Budget" />
           <TableHeader
-            textalign="text-center"
+            textAlign="text-center"
             text="Completion"
             padding="pl-1"
           />

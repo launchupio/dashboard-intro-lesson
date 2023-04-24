@@ -2,13 +2,13 @@ import { useState } from "react";
 
 function Member({
   key,
-  litemstyles,
-  divstyles,
-  imgsrc,
-  imgwidth,
-  imgheight,
-  alttext,
-  namedivstyles,
+  listItemStyles,
+  divStyles,
+  imgSrc,
+  imgWidth,
+  imgHeight,
+  altText,
+  nameDivStyles,
   name,
   personOrder,
   arrLength,
@@ -26,15 +26,15 @@ function Member({
   }
 
   return (
-    <li key={key} className={litemstyles}>
+    <li key={key} className={listItemStyles}>
       <div
         onMouseEnter={mouseEnterProfile}
         onMouseLeave={mouseExitProfile}
-        className={divstyles}
+        className={divStyles}
         style={{ zIndex: itemOrder }}
       >
-        <img src={imgsrc} width={imgwidth} height={imgheight} alt={alttext} />
-        {isNameShown && <div className={namedivstyles}>{name}</div>}
+        <img src={imgSrc} width={imgWidth} height={imgHeight} alt={altText} />
+        {isNameShown && <div className={nameDivStyles}>{name}</div>}
       </div>
     </li>
   );
