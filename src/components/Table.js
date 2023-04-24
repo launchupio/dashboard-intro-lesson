@@ -53,14 +53,10 @@ function Table({ tableData }) {
     <table className="auto w-full h-full ms-auto me-auto">
       <thead>
         <tr>
-          <TableHeader text="Companies" padding="3" />
+          <TableHeader text="Companies" padding="4" />
           <TableHeader text="Members" />
           <TableHeader textAlign="center" text="Budget" />
-          <TableHeader
-            textAlign="text-center"
-            text="Completion"
-            padding="pl-1"
-          />
+          <TableHeader textAlign="center" text="Completion" />
         </tr>
       </thead>
       <tbody>{displayTable}</tbody>
