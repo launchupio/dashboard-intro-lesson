@@ -1,7 +1,8 @@
-function TableHeader({ textAlign = "left", text, padding = "1" }) {
+function TableHeader({ textAlign = "left", text, padding = "4" }) {
   return (
     <th
-      className={`text-xs uppercase text-gray-500 text-${textAlign} pb-4 pl-${padding}`}
+      className="text-xs uppercase text-gray-500 pb-4"
+      style={{ textAlign: textAlign, paddingLeft: `${padding}px` }}
     >
       {text}
     </th>

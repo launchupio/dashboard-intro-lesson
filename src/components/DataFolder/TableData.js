@@ -14,26 +14,18 @@ export const tableData = [
       {
         profile: smiley,
         name: "Jane Simmons",
-        stackOrder: 0,
-        left: "left-[0px]",
       },
       {
         profile: smiley,
         name: "Jon Doe",
-        stackOrder: 1,
-        left: "left-[15px]",
       },
       {
         profile: smiley,
         name: "Rumi Hadid",
-        stackOrder: 2,
-        left: "left-[30px]",
       },
       {
         profile: smiley,
         name: "Jane Doe",
-        stackOrder: 3,
-        left: "left-[45px]",
       },
     ],
     budget: "$14,000",
@@ -46,14 +38,10 @@ export const tableData = [
       {
         profile: smiley,
         name: "Rumi Hadid",
-        stackOrder: 0,
-        left: "left-[0px]",
       },
       {
         profile: smiley,
         name: "Jessica Doe",
-        stackOrder: 1,
-        left: "left-[15px]",
       },
     ],
     budget: "$3,000",
@@ -66,14 +54,10 @@ export const tableData = [
       {
         profile: smiley,
         name: "Marissa Ro",
-        stackOrder: 0,
-        left: "left-[0px]",
       },
       {
         profile: smiley,
         name: "Jane Doe",
-        stackOrder: 1,
-        left: "left-[15px]",
       },
     ],
     budget: "Not set",
@@ -86,26 +70,18 @@ export const tableData = [
       {
         profile: smiley,
         name: "Jane Dems",
-        stackOrder: 0,
-        left: "left-[0px]",
       },
       {
         profile: smiley,
         name: "Rick Wills",
-        stackOrder: 1,
-        left: "left-[15px]",
       },
       {
         profile: smiley,
         name: "Jen Akins",
-        stackOrder: 2,
-        left: "left-[30px]",
       },
       {
         profile: smiley,
         name: "Stuart Little",
-        stackOrder: 3,
-        left: "left-[45px]",
       },
     ],
     budget: "$20,500",
@@ -118,8 +94,6 @@ export const tableData = [
       {
         profile: smiley,
         name: "Ron Doe",
-        stackOrder: 0,
-        left: "left-[0px]",
       },
     ],
     budget: "$500",
@@ -132,14 +106,10 @@ export const tableData = [
       {
         profile: smiley,
         name: "Jane Wane",
-        stackOrder: 0,
-        left: "left-[0px]",
       },
       {
         profile: smiley,
         name: "Tiger Woods",
-        stackOrder: 1,
-        left: "left-[15px]",
       },
     ],
     budget: "$2,000",

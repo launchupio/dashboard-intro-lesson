@@ -17,19 +17,21 @@ function Table({ tableData }) {
             {item.members.map((person, index) => {
               // length of array is used when the z-index of each picture changes when its hovered
               let arrLength = item.members.length;
+              let position = index * 15;
               return (
                 <>
                   <Member
                     key={index}
-                    listItemStyles={`absolute ${person.left}`}
-                    divStyles={`rounded-full bg-white p-[3px] -top-3 relative cursor-pointer`}
+                    listItemStyle="absolute"
+                    listItemPosition={position}
+                    divStyles="rounded-full bg-white p-[3px] -top-3 relative cursor-pointer"
                     imgSrc={person.profile}
                     imgWidth="20"
                     imgHeight="20"
                     altText="member profile"
-                    nameDivStyles={`absolute top-[30px] -left-[30px] text-sm bg-black w-max py-1 px-2 h-fit text-center text-white`}
+                    nameDivStyles="absolute top-[30px] -left-[30px] text-sm bg-black w-max py-1 px-2 h-fit text-center text-white"
                     name={person.name}
-                    personOrder={person.stackOrder}
+                    personOrder={index}
                     arrLength={arrLength}
                   />
                 </>
@@ -53,7 +55,7 @@ function Table({ tableData }) {
     <table className="auto w-full h-full ms-auto me-auto">
       <thead>
         <tr>
-          <TableHeader text="Companies" padding="4" />
+          <TableHeader text="Companies" padding="16" />
           <TableHeader text="Members" />
           <TableHeader textAlign="center" text="Budget" />
           <TableHeader textAlign="center" text="Completion" />

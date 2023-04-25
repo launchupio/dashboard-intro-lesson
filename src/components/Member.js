@@ -2,7 +2,8 @@ import { useState } from "react";
 
 function Member({
   key,
-  listItemStyles,
+  listItemStyle,
+  listItemPosition,
   divStyles,
   imgSrc,
   imgWidth,
@@ -26,7 +27,11 @@ function Member({
   }
 
   return (
-    <li key={key} className={listItemStyles}>
+    <li
+      key={key}
+      className={listItemStyle}
+      style={{ left: `${listItemPosition}px` }}
+    >
       <div
         onMouseEnter={mouseEnterProfile}
         onMouseLeave={mouseExitProfile}
